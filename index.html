@@ -1,0 +1,2146 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPICODE_M3-W3D1</title>
+
+    <!--   Link Import Bootstrap  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!--   Link Import CSS Custom  -->
+
+    <link rel="stylesheet" href="./assets/css/stylescustom.css">
+
+    <!--   Link Import Icon Bootstrap  -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <!--   Navbar By Bootstrap  -->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" aria-current="page" href="#"><img src="./assets/image/logo.svg" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Browse
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Landing
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Accounts
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+
+                    </ul>
+
+                    <!-- Profile Pic Navbar -->
+                    <div class="btn-group">
+                        <button type="button" class="btn profileBtn" data-bs-toggle="dropdown" data-bs-display="static"
+                            aria-expanded="false">
+                            <div class="proPicButton">
+                                <img src="./assets/image/avatar-1.jpg" width="50px" height="auto" alt="Foto profilo">
+                            </div>
+                            <span class="status-badge"> </span>
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu-lg-end dropdown-profile">
+                            <li>
+                                <div class="infoAccountProfile">
+                                    <div class="proPicButton"><img src="./assets/image/avatar-1.jpg" width="50px"
+                                            height="auto" alt="Foto profilo">
+                                        <span class="status-badge"></span>
+                                    </div>
+
+                                    <div class="contactAccount">
+                                        <p>Annette Black</p>
+                                        <p>annette@geeksui.com</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="principalButton">
+                                <ul>
+                                    <li>
+                                        <button class="dropdown-item itemProfilePic" type="button">
+                                            <i class="bi bi-person"></i>
+                                            <p>Profile</p>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="dropdown-item itemProfilePic" type="button">
+                                            <i class="bi bi-star"></i>
+                                            <p>Subscription</p>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="dropdown-item itemProfilePic" type="button">
+                                            <i class="bi bi-gear"></i>
+                                            <p>Setting</p>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="principalButton">
+                                <ul>
+                                    <li>
+                                        <button class="dropdown-item itemProfilePic" type="button">
+                                            <i class="bi bi-power"></i>
+                                            <p>Sign Out</p>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--   Hero Section  -->
+
+    <div class="wrapper container-fluid">
+        <div class="bgHeroSection container-fluid">
+            <section class="hero container">
+                <div class="row align-items-center">
+
+                    <!--   Text per Hero Section  -->
+                    <div class="col-lg-6 p-0">
+                        <div class="textAndCTA">
+                            <h1>Welcome Web Students!</h1>
+                            <p>Hand-picked Instructor and expertly crafted courses, designed for the modern students and
+                                entrepreneur.
+                            </p>
+
+                            <!--   Button Hero Section CTA  -->
+
+                            <div class="row">
+                                <div class="buttonCTA col">
+                                    <button type="button">Browse Courses</button>
+                                    <button type="button">Are you instructor?</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Immage Hero Section -->
+
+                    <div class="col-lg-6 p-0">
+                        <img class="image-fluid" src="./assets/image/hero-img.png" alt="Immagine di un ragazzo"
+                            width="553" height="auto">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!--   Info Section  -->
+        <div class="container infoSection">
+            <section class="infoSite row">
+                <div class="info col-md-4">
+                    <div class="infoIcon">
+                        <i class="bi bi-camera-video"></i>
+                    </div>
+                    <div class="infoText">
+                        <h3>30,000 online courses</h3>
+                        <p>Enjoy a variety of fresh topics</p>
+                    </div>
+                </div>
+                <div class="info col-md-4">
+                    <div class="infoIcon">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <div class="infoText">
+                        <h3>Expert instruction</h3>
+                        <p>Find the right instructor for you</p>
+                    </div>
+                </div>
+                <div class="info col-md-4">
+                    <div class="infoIcon">
+                        <i class="bi bi-clock"></i>
+                    </div>
+                    <div class="infoText">
+                        <h3>Lifetime access</h3>
+                        <p>Learn on your schedule</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <main>
+
+
+        <!-- Recommended to you Section -->
+        <section class="container carouselCard">
+            <h2 class="p-3">Most Popular</h2>
+            <div id="carouselRecommended" class="carousel slide p-3" data-bs-ride="true">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row row-cols-2 row-cols-lg-4 g-3">
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-javascript.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">GraphQL: introduction to graphQL for beginners
+                                            </h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>2h 40m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Advanced</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="4"><i class="bi bi-star"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>2.5</p>
+                                                <p>(1,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$500</p>
+                                                <p>$600</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-5.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Brooklyn Simmons</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-graphql.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">A Complete Beginner's Guide to JavaScript</h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>4h 10m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Advanced</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>3.5</p>
+                                                <p>(7,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$700</p>
+                                                <p>$850</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-1.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Jenny Wilson</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-node.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Beginning Node.js, Express & MongoDB Development
+                                            </h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>2h 00m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Intermediate</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>4.0</p>
+                                                <p>(15,700)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$800</p>
+                                                <p>$950</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-3.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Sina Ray</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-laravel.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Laravel: The Ultimate Beginner's Guide to Learn
+                                            </h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>1h 00m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Beginner</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>4.5</p>
+                                                <p>(2,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$170</p>
+                                                <p>$220</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-7.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Brooklyn Simmons</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row row-cols-2 row-cols-lg-4 g-3">
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-javascript.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">GraphQL: introduction to graphQL for beginners
+                                            </h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>2h 40m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Advanced</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="4"><i class="bi bi-star"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>2.5</p>
+                                                <p>(1,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$500</p>
+                                                <p>$600</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-5.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Brooklyn Simmons</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-graphql.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">A Complete Beginner's Guide to JavaScript</h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>4h 10m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Advanced</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>3.5</p>
+                                                <p>(7,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$700</p>
+                                                <p>$850</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-1.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Jenny Wilson</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-node.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Beginning Node.js, Express & MongoDB Development
+                                            </h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>2h 00m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Intermediate</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>4.0</p>
+                                                <p>(15,700)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$800</p>
+                                                <p>$950</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-3.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Sina Ray</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-laravel.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Laravel: The Ultimate Beginner's Guide to Learn
+                                            </h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>1h 00m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Beginner</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>4.5</p>
+                                                <p>(2,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$170</p>
+                                                <p>$220</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-7.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Brooklyn Simmons</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row row-cols-2 row-cols-lg-4 g-3">
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-javascript.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">GraphQL: introduction to graphQL for beginners
+                                            </h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>2h 40m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Advanced</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="4"><i class="bi bi-star"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>2.5</p>
+                                                <p>(1,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$500</p>
+                                                <p>$600</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-5.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Brooklyn Simmons</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-graphql.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">A Complete Beginner's Guide to JavaScript</h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>4h 10m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Advanced</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>3.5</p>
+                                                <p>(7,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$700</p>
+                                                <p>$850</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-1.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Jenny Wilson</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-node.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Beginning Node.js, Express & MongoDB Development
+                                            </h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>2h 00m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Intermediate</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>4.0</p>
+                                                <p>(15,700)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$800</p>
+                                                <p>$950</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-3.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Sina Ray</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-laravel.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Laravel: The Ultimate Beginner's Guide to Learn
+                                            </h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>1h 00m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Beginner</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>4.5</p>
+                                                <p>(2,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$170</p>
+                                                <p>$220</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-7.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Brooklyn Simmons</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button section First Carousel - Recommended Carousel -->
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselRecommended"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselRecommended"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+        <!-- Most Popular Section-->
+        <section class="container carouselCard">
+            <h2 class="p-3">Most Popular</h2>
+            <div id="carouselPopular" class="carousel slide p-3" data-bs-ride="true">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row row-cols-2 row-cols-lg-4 g-3">
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-javascript.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">GraphQL: introduction to graphQL for beginners
+                                            </h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>2h 40m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Advanced</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="4"><i class="bi bi-star"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>2.5</p>
+                                                <p>(1,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$500</p>
+                                                <p>$600</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-5.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Brooklyn Simmons</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-graphql.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">A Complete Beginner's Guide to JavaScript</h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>4h 10m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Advanced</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>3.5</p>
+                                                <p>(7,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$700</p>
+                                                <p>$850</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-1.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Jenny Wilson</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-node.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Beginning Node.js, Express & MongoDB Development
+                                            </h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>2h 00m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Intermediate</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>4.0</p>
+                                                <p>(15,700)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$800</p>
+                                                <p>$950</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-3.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Sina Ray</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-laravel.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Laravel: The Ultimate Beginner's Guide to Learn
+                                            </h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>1h 00m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Beginner</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>4.5</p>
+                                                <p>(2,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$170</p>
+                                                <p>$220</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-7.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Brooklyn Simmons</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row row-cols-2 row-cols-lg-4 g-3">
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-javascript.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">GraphQL: introduction to graphQL for beginners
+                                            </h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>2h 40m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Advanced</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="4"><i class="bi bi-star"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>2.5</p>
+                                                <p>(1,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$500</p>
+                                                <p>$600</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-5.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Brooklyn Simmons</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-graphql.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">A Complete Beginner's Guide to JavaScript</h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>4h 10m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Advanced</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>3.5</p>
+                                                <p>(7,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$700</p>
+                                                <p>$850</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-1.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Jenny Wilson</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-node.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Beginning Node.js, Express & MongoDB Development
+                                            </h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>2h 00m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Intermediate</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>4.0</p>
+                                                <p>(15,700)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$800</p>
+                                                <p>$950</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-3.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Sina Ray</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-laravel.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Laravel: The Ultimate Beginner's Guide to Learn
+                                            </h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>1h 00m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Beginner</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>4.5</p>
+                                                <p>(2,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$170</p>
+                                                <p>$220</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-7.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Brooklyn Simmons</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row row-cols-2 row-cols-lg-4 g-3">
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-javascript.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">GraphQL: introduction to graphQL for beginners
+                                            </h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>2h 40m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Advanced</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="4"><i class="bi bi-star"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>2.5</p>
+                                                <p>(1,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$500</p>
+                                                <p>$600</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-5.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Brooklyn Simmons</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-graphql.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">A Complete Beginner's Guide to JavaScript</h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>4h 10m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Advanced</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>3.5</p>
+                                                <p>(7,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$700</p>
+                                                <p>$850</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-1.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Jenny Wilson</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-node.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Beginning Node.js, Express & MongoDB Development
+                                            </h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>2h 00m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Intermediate</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>4.0</p>
+                                                <p>(15,700)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$800</p>
+                                                <p>$950</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-3.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Sina Ray</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-laravel.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Laravel: The Ultimate Beginner's Guide to Learn
+                                            </h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>1h 00m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Beginner</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>4.5</p>
+                                                <p>(2,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$170</p>
+                                                <p>$220</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-7.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Brooklyn Simmons</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button section Second Carousel - Most Popular Carousel -->
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPopular"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPopular"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+        <!-- Trending -->
+        <section class="container carouselCard">
+            <h2 class="p-3">Trending</h2>
+            <div id="carouselTrending" class="carousel slide p-3" data-bs-ride="true">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row row-cols-2 row-cols-lg-4 g-3">
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-javascript.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">GraphQL: introduction to graphQL for
+                                                beginners</h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>2h 40m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Advanced</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="4"><i class="bi bi-star"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>2.5</p>
+                                                <p>(1,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$500</p>
+                                                <p>$600</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-5.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Brooklyn Simmons</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-graphql.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">A Complete Beginner's Guide to JavaScript
+                                            </h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>4h 10m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Advanced</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>3.5</p>
+                                                <p>(7,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$700</p>
+                                                <p>$850</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-1.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Jenny Wilson</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-node.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Beginning Node.js, Express & MongoDB
+                                                Development</h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>2h 00m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Intermediate</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>4.0</p>
+                                                <p>(15,700)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$800</p>
+                                                <p>$950</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-3.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Sina Ray</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-laravel.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Laravel: The Ultimate Beginner's Guide to
+                                                Learn</h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>1h 00m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Beginner</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>4.5</p>
+                                                <p>(2,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$170</p>
+                                                <p>$220</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-7.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Brooklyn Simmons</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row row-cols-2 row-cols-lg-4 g-3">
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-javascript.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">GraphQL: introduction to graphQL for
+                                                beginners</h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>2h 40m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Advanced</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="4"><i class="bi bi-star"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>2.5</p>
+                                                <p>(1,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$500</p>
+                                                <p>$600</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-5.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Brooklyn Simmons</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-graphql.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">A Complete Beginner's Guide to JavaScript
+                                            </h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>4h 10m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Advanced</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>3.5</p>
+                                                <p>(7,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$700</p>
+                                                <p>$850</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-1.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Jenny Wilson</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-node.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Beginning Node.js, Express & MongoDB
+                                                Development</h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>2h 00m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Intermediate</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>4.0</p>
+                                                <p>(15,700)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$800</p>
+                                                <p>$950</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-3.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Sina Ray</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-laravel.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Laravel: The Ultimate Beginner's Guide to
+                                                Learn</h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>1h 00m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Beginner</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>4.5</p>
+                                                <p>(2,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$170</p>
+                                                <p>$220</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-7.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Brooklyn Simmons</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row row-cols-2 row-cols-lg-4 g-3">
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-javascript.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">GraphQL: introduction to graphQL for
+                                                beginners</h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>2h 40m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Advanced</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="4"><i class="bi bi-star"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>2.5</p>
+                                                <p>(1,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$500</p>
+                                                <p>$600</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-5.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Brooklyn Simmons</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-graphql.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">A Complete Beginner's Guide to JavaScript
+                                            </h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>4h 10m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Advanced</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>3.5</p>
+                                                <p>(7,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$700</p>
+                                                <p>$850</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-1.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Jenny Wilson</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-node.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Beginning Node.js, Express & MongoDB
+                                                Development</h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>2h 00m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Intermediate</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>4.0</p>
+                                                <p>(15,700)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$800</p>
+                                                <p>$950</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-3.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Sina Ray</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col singleCard">
+                                    <div class="card">
+                                        <img src="./assets/image/course-laravel.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Laravel: The Ultimate Beginner's Guide to
+                                                Learn</h5>
+                                            <div class="infoCard">
+                                                <div class="durationCourse">
+                                                    <i class="bi bi-clock"></i>
+                                                    <p>1h 00m</p>
+                                                </div>
+                                                <div class="difficultCourse">
+                                                    <i class="bi bi-bar-chart-fill"></i>
+                                                    <p>Beginner</p>
+                                                </div>
+                                            </div>
+                                            <div class="ratingStars">
+                                                <div id="star-rating" class="star-rating">
+                                                    <span class="star" data-value="1"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="2"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="3"><i
+                                                            class="bi bi-star-fill"></i></span>
+                                                    <span class="star" data-value="4"><i
+                                                            class="bi bi-star-half"></i></span>
+                                                    <span class="star" data-value="5"><i class="bi bi-star"></i></span>
+                                                </div>
+                                                <p>4.5</p>
+                                                <p>(2,500)</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>$170</p>
+                                                <p>$220</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="author">
+                                                <div class="imgAuthor">
+                                                    <img src="./assets/image/avatar-7.jpg" alt="" class="image-fluid">
+                                                </div>
+                                                <p>Brooklyn Simmons</p>
+                                            </div>
+                                            <i class="bi bi-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button section Thirty Carousel - Trending Carousel -->
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTrending"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTrending"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer>
+
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col align-items-center">
+                    <p> &copy; 2022 Geeks. All Rights Reserved.</p>
+                </div>
+                <div class="col">
+                    <nav class="footerNav">
+                        <ul>
+                            <li>
+                                <a class="nav-link" href="#">Privacy</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">Terms</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">Feedback</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">Support</a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+            </nav>
+        </div>
+
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
